@@ -8,6 +8,15 @@
   border-radius: 50%;
   z-index: 2;
 }
+
+.on .bulb {
+  background: #fff;
+}
+
+.on .bulb::before {
+  background: #fff;
+}
+
 .bulb::before {
   content: "";
   position: absolute;
@@ -18,6 +27,19 @@
   background: #444;
   border-top: 30px solid #000;
   border-radius: 10px;
+}
+
+.on .bulb::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  filter: blur(40px);
 }
 
 .bulb span:nth-child(1) {
@@ -33,6 +55,10 @@
   box-shadow: 20px 20px 0 10px #444;
 }
 
+.on .bulb span:nth-child(1) {
+  box-shadow: 20px 20px 0 10px #fff;
+}
+
 .bulb span:nth-child(2) {
   position: absolute;
   top: -16px;
@@ -44,6 +70,10 @@
   transform: rotate(17deg);
   border-bottom-left-radius: 40px;
   box-shadow: -20px 20px 0 10px #444;
+}
+
+.on .bulb span:nth-child(2) {
+  box-shadow: -20px 20px 0 10px #fff;
 }
 
 .wire {

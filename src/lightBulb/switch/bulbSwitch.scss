@@ -32,3 +32,7 @@
   background: linear-gradient(#fff, #fff);
   border-radius: 4px;
 }
+
+.on .bulbSwitch .btnSwitch::before {
+  top: 15%;
+}

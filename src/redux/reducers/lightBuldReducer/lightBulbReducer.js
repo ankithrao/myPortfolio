@@ -9,7 +9,7 @@ export const lightBulbReducer = (state = initialState, action) => {
     case SET_LIGHT_BULB: {
       return {
         ...state,
-        bulb: action.payload,
+        bulb: !state.bulb,
       };
     }
     default:

@@ -6,12 +6,12 @@ import { bulbSwitchToggle } from "../../redux/actions/lightBulbActons";
 const BulbSwitch = () => {
   const dispatch = useDispatch();
 
-  const toggleSwitch = () => {
-    dispatch(bulbSwitchToggle(false));
+  const handleToggleSwitch = () => {
+    dispatch(bulbSwitchToggle());
   };
   return (
     <div className="bulbSwitch">
-      <div className="btnSwitch" onClick={() => toggleSwitch()}></div>
+      <div className="btnSwitch" onClick={() => handleToggleSwitch()}></div>
     </div>
   );
 };
