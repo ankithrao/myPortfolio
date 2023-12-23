@@ -7,7 +7,7 @@ const BulbSwitch = () => {
   const dispatch = useDispatch();
 
   const toggleSwitch = () => {
-    dispatch(bulbSwitchToggle(true));
+    dispatch(bulbSwitchToggle(false));
   };
   return (
     <div className="bulbSwitch">
