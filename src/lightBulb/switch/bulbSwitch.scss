@@ -1,0 +1,38 @@
+.bulbSwitch {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(#eee, #ccc, #eee);
+  border: 3px solid #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bulbSwitch .btnSwitch {
+  position: relative;
+  width: 25px;
+  height: 40px;
+  background: linear-gradient(#777, #fff, #777);
+  border-radius: 6px;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.bulbSwitch .btnSwitch::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background: linear-gradient(#fff, #fff);
+  border-radius: 4px;
+}
+
+.on .bulbSwitch .btnSwitch::before {
+  top: 15%;
+}
